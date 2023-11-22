@@ -1,0 +1,29 @@
+@()
+
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href=@routes.Assets.versioned("stylesheets/main.css")">
+</head>
+
+@main("Login") {
+
+<h1>Welcome</h1>
+
+<p>Log into your account</p>
+
+<form action="@routes.CountryController.getCapital()" method="post">
+
+    <label for="fname">Username:</label><br>
+    <br>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Password:</label><br>
+    <br>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <label>Country:</label><br><br>
+    <input type="text" id="country"><br><br>
+    <a>Submit</a>
+
+</form>
+
+}
+
